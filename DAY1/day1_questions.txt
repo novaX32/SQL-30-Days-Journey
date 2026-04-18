@@ -1,0 +1,119 @@
+Section 1: Basic SELECT & Column Selection (1-10)
+
+1.Select all columns from the film table.
+
+2.Select only title, release_year, and rental_rate from film.
+
+3.Select first_name and last_name from the actor table.
+
+4.Select customer_id, first_name, last_name, and email from customer.
+
+5.Select title and description from film.
+
+6.Select name from the category table.
+
+7.Select address, district, and postal_code from the address table.
+
+8.Select all columns from the staff table.
+
+9.Select store_id and manager_staff_id from the store table.
+
+10.Select city and country_id from the city table.
+
+Section 2: Column Aliases (11-20)
+
+11.Select title as "Movie Title" and rental_rate as "Rental Rate" from film.
+
+12.Select first_name as "First Name", last_name as "Last Name" from actor.
+
+13.Select customer_id as "ID", first_name || ' ' || last_name as "Full Name", email from customer.
+
+14.Select title, length as "Duration in Minutes" from film.
+
+15.Select amount as "Payment Amount", payment_date as "Paid On" from payment.
+
+16.Select name as "Category Name" from category.
+
+17.Select first_name as "Actor First Name", last_name as "Actor Last Name" from actor.
+
+18.Select title as "Film", replacement_cost as "Replacement Cost (USD)" from film.
+
+19.Select rental_date as "Rented On", return_date as "Returned On" from rental.
+
+20.Select address as "Street Address", district as "District/Area" from address.
+
+Section 3: DISTINCT (21-25)
+
+21.Find all unique rating values in the film table.
+
+22.Find all unique release_year values from film.
+
+23.List distinct district values from the address table.
+
+24.Find unique combinations of first_name and last_name from actor (to check for duplicate names).
+
+25.Get distinct name from category.
+
+Section 4: ORDER BY (26-35)
+
+26.List all films sorted by title alphabetically.
+
+27.List all films sorted by rental_rate descending (most expensive first).
+
+28.Sort customers by last_name ascending, then first_name ascending.
+
+29.Sort payments by amount descending.
+
+30.Sort actors by last_name descending.
+
+31.List films sorted by length ascending (shortest first).
+
+32.Sort films by replacement_cost descending, then by rental_rate ascending.
+
+33.List all cities sorted by city name.
+
+34.Sort rentals by rental_date descending (most recent first).
+
+35.Sort staff by last_name.
+
+Section 5: LIMIT & OFFSET (36-40)
+
+36.Show the first 10 films (by title order).
+
+37.Show films 11 to 20 (use OFFSET).
+Get the top 5 most expensive films by rental_rate.
+
+38.Show the 10 most recent payments (order by payment_date desc + LIMIT).
+
+39.Get the first 15 customers ordered by customer_id.
+
+Section 6: Basic WHERE Clause (41-50)
+
+40.Find films where rating = 'PG'.
+
+41.Find films where rental_rate < 1.00.
+
+42.Find customers whose first_name is 'MARY'.
+
+43.Find actors whose last_name starts with 'S' (use LIKE).
+
+44.Find films with length > 120 minutes.
+
+45.Find payments where amount > 5.00.
+
+46.Find rentals where return_date IS NULL (not yet returned).
+
+47.Find films where release_year = 2006.
+
+48.Find addresses in district 'California'.
+
+49.Find categories where name is 'Action' or 'Comedy'.
+
+Bonus Challenges (Do these after the 50)
+
+50.Retrieve the top 5 longest films, showing title, length, and alias as "Duration".
+
+51.List the 10 cheapest films (lowest rental_rate), sorted ascending.
+Find all customers living in a district containing 'Texas' (use LIKE '%Texas%').
+
+52.Show the first 20 actors with full name as "Actor Name" (concat first + last), ordered by last name.
