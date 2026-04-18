@@ -1,4 +1,4 @@
-DAY 1-Topic Name
+DAY 1
 Topic Covered:
     SELECT
     WHERE
